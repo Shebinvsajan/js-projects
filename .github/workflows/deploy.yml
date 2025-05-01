@@ -9,6 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:  # Add permissions block
+      contents: write
+      pages: write  # Ensure Pages permissions are granted
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -19,7 +23,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: .  index.html
+        path: ./  # Ensure this points to the root directory or the correct static files
 
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
