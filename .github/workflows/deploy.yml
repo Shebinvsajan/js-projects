@@ -5,27 +5,27 @@ on:
     branches:
       - main  # or 'master'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: read  # Add this line
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-      pages: write
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./  # Ensure this points to the correct static files directory
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./  # Adjust this path if your site files are located elsewhere
 
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
-      with:
-        enablement: true  # Add this to ensure the action enables Pages if not already enabled
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
