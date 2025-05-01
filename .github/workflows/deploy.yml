@@ -1,19 +1,23 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
-    branches:
-      - main  # or 'master'
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-  actions: read  # Add this line
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    # 1️⃣ Job-level permissions
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      actions: read
+
+    # 2️⃣ Target the built-in environment for OIDC
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout code
@@ -25,7 +29,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./  # Adjust this path if your site files are located elsewhere
+          path: ./  # Adjust as needed
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
+        # 👋 No 'enablement' input here!
