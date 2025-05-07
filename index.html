@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>100 Days JS Projects</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <h1>hello world</h1>
-    
+  <!-- Navbar -->
+  <header class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">100 Days of JS</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:text-gray-300">Projects</a></li>
+          <li><a href="#" class="hover:text-gray-300">About</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-6">
+    <h2 class="text-3xl font-semibold mb-6">Day JS Projects</h2>
+
+    <!-- Grid Container -->
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Cards will be injected here -->
+    </div>
+
+    <!-- Pagination Controls -->
+    <div id="pagination" class="flex justify-center items-center mt-8 space-x-2">
+      <!-- Buttons will be injected here -->
+    </div>
+  </main>
+
+  <!-- Vanilla JavaScript -->
+  <script>
+    const perPage = 8;            // show 8 cards per page
+    let currentPage = 1;
+    let projectsData = [];
+    let totalPages = 0;
+
+    // Fetch the JSON file
+    fetch('projects.json')
+      .then(res => res.json())
+      .then(data => {
+        projectsData = data;
+        totalPages = Math.ceil(projectsData.length / perPage);
+        update();
+      })
+      .catch(err => console.error('Failed to load projects.json:', err));
+
+    // Render the grid of cards
+    function renderGrid() {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';
+      const start = (currentPage - 1) * perPage;
+      const slice = projectsData.slice(start, start + perPage);
+
+      slice.forEach(({ day, title, description, image, liveLink, sourceLink }) => {
+        const card = document.createElement('div');
+        card.className = 'bg-white shadow rounded-lg overflow-hidden flex flex-col';
+        card.innerHTML = `
+          <img src="${image}" alt="${title}" class="w-full h-40 object-cover">
+          <div class="p-4 flex-1 flex flex-col">
+            <h3 class="text-lg font-semibold mb-2">${title}</h3>
+            <p class="text-gray-600 text-sm mb-4 flex-1">${description}</p>
+            <div class="mt-auto flex space-x-2">
+              <a href="${liveLink}" target="_blank" class="flex-1 text-center px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
+                Live
+              </a>
+              <a href="${sourceLink}" target="_blank" class="flex-1 text-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Source
+              </a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Render pagination buttons
+    function renderPagination() {
+      const container = document.getElementById('pagination');
+      container.innerHTML = '';
+
+      // Prev button
+      const prev = document.createElement('button');
+      prev.textContent = 'Prev';
+      prev.disabled = currentPage === 1;
+      prev.className = 'px-3 py-1 bg-gray-200 rounded disabled:opacity-50';
+      prev.addEventListener('click', () => { currentPage--; update(); });
+      container.appendChild(prev);
+
+      // Page number buttons
+      for (let p = 1; p <= totalPages; p++) {
+        const btn = document.createElement('button');
+        btn.textContent = p;
+        btn.className = `px-3 py-1 rounded ${
+          p === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-200'
+        }`;
+        btn.addEventListener('click', () => { currentPage = p; update(); });
+        container.appendChild(btn);
+      }
+
+      // Next button
+      const next = document.createElement('button');
+      next.textContent = 'Next';
+      next.disabled = currentPage === totalPages;
+      next.className = 'px-3 py-1 bg-gray-200 rounded disabled:opacity-50';
+      next.addEventListener('click', () => { currentPage++; update(); });
+      container.appendChild(next);
+    }
+
+    // Central update function
+    function update() {
+      renderGrid();
+      renderPagination();
+    }
+  </script>
 </body>
 </html>
