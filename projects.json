@@ -2,162 +2,34 @@
   {
     "day": 1,
     "title": "Day 1 JS Project",
-    "description": "Build a to-do list app with add/remove functionality.",
-    "image": "https://via.placeholder.com/400x250?text=Day+1+Project",
-    "liveLink": "./day-1/index.html",
+    "description": "Testimonial Slider Project",
+    "image": "https://i.postimg.cc/ncft4XqY/Screenshot-from-2025-05-07-17-00-07.png",
+    "liveLink": "./project-1/index.html",
     "sourceLink": "https://github.com/yourusername/day1-js-project"
     
   },
   {
     "day": 2,
     "title": "Day 2 JS Project",
-    "description": "Create a stopwatch timer with start/stop/reset controls.",
-    "image": "https://via.placeholder.com/400x250?text=Day+2+Project",
-    "liveLink": "https://example.com/day2-live",
+    "description": "Age Calculator Project",
+    "image": "https://i.postimg.cc/tRhcH2VW/Screenshot-from-2025-05-07-17-01-48.png",
+    "liveLink": "/project-2/index.html",
     "sourceLink": "https://github.com/yourusername/day2-js-project"
   },
   {
     "day": 3,
     "title": "Day 3 JS Project",
-    "description": "Fetch and display GitHub user profiles.",
-    "image": "https://via.placeholder.com/400x250?text=Day+3+Project",
-    "liveLink": "https://example.com/day3-live",
+    "description": "Dice Roll Simulator Project ",
+    "image": "https://i.postimg.cc/mgMzdznL/Screenshot-from-2025-05-07-17-04-26.png",
+    "liveLink": "/project-4/index.html",
     "sourceLink": "https://github.com/yourusername/day3-js-project"
   },
   {
     "day": 4,
     "title": "Day 4 JS Project",
-    "description": "Build a weather widget using a public API.",
-    "image": "https://via.placeholder.com/400x250?text=Day+4+Project",
-    "liveLink": "https://example.com/day4-live",
+    "description": "Recipe Book App Project",
+    "image": "https://i.postimg.cc/907YsJd1/Screenshot-from-2025-05-08-09-08-17.png",
+    "liveLink": "/project-4/index.html",
     "sourceLink": "https://github.com/yourusername/day4-js-project"
-  },
-  {
-    "day": 5,
-    "title": "Day 5 JS Project",
-    "description": "Animate an SVG loading spinner.",
-    "image": "https://via.placeholder.com/400x250?text=Day+5+Project",
-    "liveLink": "https://example.com/day5-live",
-    "sourceLink": "https://github.com/yourusername/day5-js-project"
-  },
-  {
-    "day": 6,
-    "title": "Day 6 JS Project",
-    "description": "Implement a dark mode toggle for your site.",
-    "image": "https://via.placeholder.com/400x250?text=Day+6+Project",
-    "liveLink": "https://example.com/day6-live",
-    "sourceLink": "https://github.com/yourusername/day6-js-project"
-  },
-  {
-    "day": 7,
-    "title": "Day 7 JS Project",
-    "description": "Build a multiple-choice quiz game.",
-    "image": "https://via.placeholder.com/400x250?text=Day+7+Project",
-    "liveLink": "https://example.com/day7-live",
-    "sourceLink": "https://github.com/yourusername/day7-js-project"
-  },
-  {
-    "day": 8,
-    "title": "Day 8 JS Project",
-    "description": "Create a drawing canvas with freehand lines.",
-    "image": "https://via.placeholder.com/400x250?text=Day+8+Project",
-    "liveLink": "https://example.com/day8-live",
-    "sourceLink": "https://github.com/yourusername/day8-js-project"
-  },
-  {
-    "day": 9,
-    "title": "Day 9 JS Project",
-    "description": "Develop a simple chatbot with predefined responses.",
-    "image": "https://via.placeholder.com/400x250?text=Day+9+Project",
-    "liveLink": "https://example.com/day9-live",
-    "sourceLink": "https://github.com/yourusername/day9-js-project"
-  },
-  {
-    "day": 10,
-    "title": "Day 10 JS Project",
-    "description": "Deploy a personal portfolio site.",
-    "image": "https://via.placeholder.com/400x250?text=Day+10+Project",
-    "liveLink": "https://example.com/day10-live",
-    "sourceLink": "https://github.com/yourusername/day10-js-project"
-  },
-  {
-    "day": 11,
-    "title": "Day 11 JS Project",
-    "description": "Build a currency converter using an API.",
-    "image": "https://via.placeholder.com/400x250?text=Day+11+Project",
-    "liveLink": "https://example.com/day11-live",
-    "sourceLink": "https://github.com/yourusername/day11-js-project"
-  },
-  {
-    "day": 12,
-    "title": "Day 12 JS Project",
-    "description": "Create a responsive image carousel.",
-    "image": "https://via.placeholder.com/400x250?text=Day+12+Project",
-    "liveLink": "https://example.com/day12-live",
-    "sourceLink": "https://github.com/yourusername/day12-js-project"
-  },
-  {
-    "day": 13,
-    "title": "Day 13 JS Project",
-    "description": "Implement infinite scroll pagination.",
-    "image": "https://via.placeholder.com/400x250?text=Day+13+Project",
-    "liveLink": "https://example.com/day13-live",
-    "sourceLink": "https://github.com/yourusername/day13-js-project"
-  },
-  {
-    "day": 14,
-    "title": "Day 14 JS Project",
-    "description": "Build a modal dialog component.",
-    "image": "https://via.placeholder.com/400x250?text=Day+14+Project",
-    "liveLink": "https://example.com/day14-live",
-    "sourceLink": "https://github.com/yourusername/day14-js-project"
-  },
-  {
-    "day": 15,
-    "title": "Day 15 JS Project",
-    "description": "Create a multi-step form wizard.",
-    "image": "https://via.placeholder.com/400x250?text=Day+15+Project",
-    "liveLink": "https://example.com/day15-live",
-    "sourceLink": "https://github.com/yourusername/day15-js-project"
-  },
-  {
-    "day": 16,
-    "title": "Day 16 JS Project",
-    "description": "Implement drag-and-drop file upload.",
-    "image": "https://via.placeholder.com/400x250?text=Day+16+Project",
-    "liveLink": "https://example.com/day16-live",
-    "sourceLink": "https://github.com/yourusername/day16-js-project"
-  },
-  {
-    "day": 17,
-    "title": "Day 17 JS Project",
-    "description": "Build a sortable and filterable table.",
-    "image": "https://via.placeholder.com/400x250?text=Day+17+Project",
-    "liveLink": "https://example.com/day17-live",
-    "sourceLink": "https://github.com/yourusername/day17-js-project"
-  },
-  {
-    "day": 18,
-    "title": "Day 18 JS Project",
-    "description": "Create a country search autocomplete.",
-    "image": "https://via.placeholder.com/400x250?text=Day+18+Project",
-    "liveLink": "https://example.com/day18-live",
-    "sourceLink": "https://github.com/yourusername/day18-js-project"
-  },
-  {
-    "day": 19,
-    "title": "Day 19 JS Project",
-    "description": "Develop a real-time chat interface.",
-    "image": "https://via.placeholder.com/400x250?text=Day+19+Project",
-    "liveLink": "https://example.com/day19-live",
-    "sourceLink": "https://github.com/yourusername/day19-js-project"
-  },
-  {
-    "day": 20,
-    "title": "Day 20 JS Project",
-    "description": "Build a local storage note-taking app.",
-    "image": "https://via.placeholder.com/400x250?text=Day+20+Project",
-    "liveLink": "https://example.com/day20-live",
-    "sourceLink": "https://github.com/yourusername/day20-js-project"
   }
 ]
