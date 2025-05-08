@@ -31,5 +31,23 @@
     "image": "https://i.postimg.cc/907YsJd1/Screenshot-from-2025-05-08-09-08-17.png",
     "liveLink": "/project-4/index.html",
     "sourceLink": "https://github.com/yourusername/day4-js-project"
+  },
+  {
+    "day": 5,
+    "title": "Day 5 JS Project",
+    "description": "Pomodoro Timer Project",
+    "image": "https://i.postimg.cc/SN8GdSf9/Screenshot-from-2025-05-08-12-49-04.png",
+    "liveLink": "/project-5/index.html",
+    "sourceLink": "https://github.com/yourusername/day4-js-project"
+  },
+  {
+    "day": 6,
+    "title": "Day 6 JS Project",
+    "description": "Digital Clock Project",
+    "image": "https://i.postimg.cc/vZLVKDKJ/Screenshot-from-2025-05-08-14-13-56.png",
+    "liveLink": "/project-5/index.html",
+    "sourceLink": "https://github.com/yourusername/day4-js-project"
   }
 ]
+
+
