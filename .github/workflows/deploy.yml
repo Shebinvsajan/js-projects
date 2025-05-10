@@ -11,23 +11,18 @@ jobs:
       pages: write
       id-token: write
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
           enablement: true
+          token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./       # includes index.html and project-*/index.html
+          path: ./
 
       - name: Deploy to GitHub Pages
         id: deployment
