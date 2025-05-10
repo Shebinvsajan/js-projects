@@ -45,9 +45,18 @@
     "title": "Day 6 JS Project",
     "description": "Digital Clock Project",
     "image": "https://i.postimg.cc/vZLVKDKJ/Screenshot-from-2025-05-08-14-13-56.png",
-    "liveLink": "/project-5/index.html",
+    "liveLink": "/project-6/index.html",
+    "sourceLink": "https://github.com/yourusername/day4-js-project"
+  },
+  {
+    "day": 7,
+    "title": "Day 7 JS Project",
+    "description": "Todo app Project",
+    "image": "https://i.postimg.cc/HxY4QYMm/Screenshot-from-2025-05-10-22-37-33.png",
+    "liveLink": "/project-7/index.html",
     "sourceLink": "https://github.com/yourusername/day4-js-project"
   }
 ]
+
 
 
