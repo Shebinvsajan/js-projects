@@ -3,34 +3,36 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-      actions: read
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
+      - name: Install & Build
+        run: |
+          # e.g. npm ci && npm run build
+          echo "build your site here"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./  # Adjust as needed
+          path: ./build
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          enablement: true  # Add this line
