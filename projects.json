@@ -5,7 +5,7 @@
     "description": "Testimonial Slider Project",
     "image": "https://i.postimg.cc/ncft4XqY/Screenshot-from-2025-05-07-17-00-07.png",
     "liveLink": "./project-1/index.html",
-    "sourceLink": "https://github.com/yourusername/day1-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-1"
     
   },
   {
@@ -14,7 +14,7 @@
     "description": "Age Calculator Project",
     "image": "https://i.postimg.cc/tRhcH2VW/Screenshot-from-2025-05-07-17-01-48.png",
     "liveLink": "/project-2/index.html",
-    "sourceLink": "https://github.com/yourusername/day2-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-2"
   },
   {
     "day": 3,
@@ -22,7 +22,7 @@
     "description": "Dice Roll Simulator Project ",
     "image": "https://i.postimg.cc/mgMzdznL/Screenshot-from-2025-05-07-17-04-26.png",
     "liveLink": "/project-4/index.html",
-    "sourceLink": "https://github.com/yourusername/day3-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-3"
   },
   {
     "day": 4,
@@ -30,7 +30,7 @@
     "description": "Recipe Book App Project",
     "image": "https://i.postimg.cc/907YsJd1/Screenshot-from-2025-05-08-09-08-17.png",
     "liveLink": "/project-4/index.html",
-    "sourceLink": "https://github.com/yourusername/day4-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-4"
   },
   {
     "day": 5,
@@ -38,7 +38,7 @@
     "description": "Pomodoro Timer Project",
     "image": "https://i.postimg.cc/SN8GdSf9/Screenshot-from-2025-05-08-12-49-04.png",
     "liveLink": "/project-5/index.html",
-    "sourceLink": "https://github.com/yourusername/day4-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-5"
   },
   {
     "day": 6,
@@ -46,7 +46,7 @@
     "description": "Digital Clock Project",
     "image": "https://i.postimg.cc/vZLVKDKJ/Screenshot-from-2025-05-08-14-13-56.png",
     "liveLink": "/project-6/index.html",
-    "sourceLink": "https://github.com/yourusername/day4-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-6"
   },
   {
     "day": 7,
@@ -54,7 +54,7 @@
     "description": "Todo app Project",
     "image": "https://i.postimg.cc/HxY4QYMm/Screenshot-from-2025-05-10-22-37-33.png",
     "liveLink": "/project-7/index.html",
-    "sourceLink": "https://github.com/yourusername/day4-js-project"
+    "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-7"
   }
 ]
 

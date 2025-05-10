@@ -7,14 +7,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    # 1️⃣ Job-level permissions
     permissions:
       contents: write
       pages: write
       id-token: write
       actions: read
 
-    # 2️⃣ Target the built-in environment for OIDC
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -34,4 +32,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        # 👋 No 'enablement' input here!
+        with:
+          enablement: true  # Add this line
