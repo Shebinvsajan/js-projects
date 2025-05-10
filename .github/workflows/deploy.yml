@@ -2,14 +2,17 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+
+# Add global permissions to ensure they propagate properly
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: read
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-      actions: read
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -20,6 +23,7 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           enablement: true  # This will automatically enable GitHub Pages
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
