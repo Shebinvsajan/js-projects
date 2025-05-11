@@ -13,7 +13,7 @@
     "title": "Day 2 JS Project",
     "description": "Age Calculator Project",
     "image": "https://i.postimg.cc/tRhcH2VW/Screenshot-from-2025-05-07-17-01-48.png",
-    "liveLink": "/project-2/index.html",
+    "liveLink": "./project-2/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-2"
   },
   {
@@ -21,7 +21,7 @@
     "title": "Day 3 JS Project",
     "description": "Dice Roll Simulator Project ",
     "image": "https://i.postimg.cc/mgMzdznL/Screenshot-from-2025-05-07-17-04-26.png",
-    "liveLink": "/project-4/index.html",
+    "liveLink": "./project-4/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-3"
   },
   {
@@ -29,7 +29,7 @@
     "title": "Day 4 JS Project",
     "description": "Recipe Book App Project",
     "image": "https://i.postimg.cc/907YsJd1/Screenshot-from-2025-05-08-09-08-17.png",
-    "liveLink": "/project-4/index.html",
+    "liveLink": "./project-4/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-4"
   },
   {
@@ -37,7 +37,7 @@
     "title": "Day 5 JS Project",
     "description": "Pomodoro Timer Project",
     "image": "https://i.postimg.cc/SN8GdSf9/Screenshot-from-2025-05-08-12-49-04.png",
-    "liveLink": "/project-5/index.html",
+    "liveLink": "./project-5/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-5"
   },
   {
@@ -45,7 +45,7 @@
     "title": "Day 6 JS Project",
     "description": "Digital Clock Project",
     "image": "https://i.postimg.cc/vZLVKDKJ/Screenshot-from-2025-05-08-14-13-56.png",
-    "liveLink": "/project-6/index.html",
+    "liveLink": "./project-6/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-6"
   },
   {
@@ -53,7 +53,7 @@
     "title": "Day 7 JS Project",
     "description": "Todo app Project",
     "image": "https://i.postimg.cc/HxY4QYMm/Screenshot-from-2025-05-10-22-37-33.png",
-    "liveLink": "/project-7/index.html",
+    "liveLink": "./project-7/index.html",
     "sourceLink": "https://github.com/Shebinvsajan/js-projects/tree/main/project-7"
   }
 ]
